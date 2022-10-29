@@ -7,10 +7,15 @@
     <title>Portfolio Website</title>
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/baseConfig.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <!-- Header-->
@@ -117,17 +122,167 @@
 
         <div class="portfolio-content">
             <div class="portfolio-box">
-                <img class="portfolio-img" src="" alt="">
+                <img class="portfolio-img" src="assets/webDeveloper.jpg" alt="">
                 <!-- Overlay -->
                 <div class="portfolio-overlay">
                     <h2>Web Development</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img class="portfolio-img" src="assets/React .png" alt="">
+                <!-- Overlay -->
+                <div class="portfolio-overlay">
+                    <h2>React Portfolio</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img class="portfolio-img" src="assets/MERN Stack.jpg" alt="">
+                <!-- Overlay -->
+                <div class="portfolio-overlay">
+                    <h2>MERN Stack System</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img class="portfolio-img" src="assets/Cyber-Security-1920x1200.jpg" alt="">
+                <!-- Overlay -->
+                <div class="portfolio-overlay">
+                    <h2>Cyber Security</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt'></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects -->
+    <section class="projects container" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-content">
+            <div class="project-box">
+                <h2>127+</h2>
+                <span>Projects Completed</span>
+            </div>
+            <div class="project-box">
+                <h2>93+</h2>
+                <span>Website Developed</span>
+            </div>
+            <div class="project-box">
+                <h2>103+</h2> 
+                <span>Testemonials Happiers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews container" id="review">
+        <h2 class="heading">Reviews</h2>
+
+        <div class="review-content swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <!-- Reviews Box -->
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right'></i>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Consequatur porro dolores accusantium, illum nostrum iste?
+                        </p>
+                        <div class="review-profile">
+                            <h2>Michel Nemoto</h2>
+                            <span>From Brazil, Colorado</span>
+                            <img src="assets/Michel.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <!-- Reviews Box -->
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right'></i>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Consequatur porro dolores accusantium, illum nostrum iste?
+                        </p>
+                        <div class="review-profile">
+                            <h2>Nanda Tagawa Nemoto</h2>
+                            <span>From Porttugal, Marketing Digital & Designer</span>
+                            <img src="assets/Nanda.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <!-- Reviews Box -->
+                    <div class="review-box">
+                        <i class='bx bxs-quote-right'></i>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Consequatur porro dolores accusantium, illum nostrum iste?
+                        </p>
+                        <div class="review-profile">
+                            <h2>John Doe</h2>
+                            <span>From Knon Where</span>
+                            <img src="assets/John Doe.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+        
+            </div>
+      
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact container" id="contact">
+        <h2 class="heading">Contact</h2>
+
+        <form action="#" class="contact-form" id="contact-form">
+            <input 
+                type="text" 
+                class="name" 
+                name="name" 
+                placeholder="Your name" 
+                required
+            >
+            <input 
+                type="email" 
+                name="email" 
+                class="email" 
+                placeholder="Email address"  
+                required
+            >
+            <textarea 
+                name="" 
+                id="" 
+                cols="30" rows="10" 
+                placeholder="Write message here..." 
+                class="message" 
+                required>
+            </textarea>
+            <input type="submit" value="Send" class="send-btn">
+        </form>
+    </section>
 
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
