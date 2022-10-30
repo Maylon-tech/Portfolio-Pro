@@ -41,6 +41,10 @@ header {
     font-weight: 600;
     color: var(--main-color);
 }
+.logo2 {
+    text-transform: uppercase;
+    color: #323330d3;
+}
 .navbar {
     display: flex;
     align-items: center;

@@ -23,7 +23,7 @@
         <!-- Nav -->
         <div class="nav container">
             <!-- LOGO -->
-            <a href="#" class="logo">Nemoto</a>
+            <a href="#" class="logo">Nemoto<span class="logo2">Portfolio</span></a>
             <!-- Navbar -->
             <ul class="navbar">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -281,6 +281,16 @@
         </form>
     </section>
 
+    <!-- Email JS Link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Sweet alert JS Link -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            //Will use Email js api Key here
+            emailjs.init("T4_zErNjOUNhmLliq")
+        })()
+    </script>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
