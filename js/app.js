@@ -1,7 +1,17 @@
 const menu = document.querySelector(".menu-icon")
+const navbar = document.querySelector(".navbar")
+
+
 menu.onclick = () => {
-    menu.classList.toggle('move')
+  navbar.classList.toggle('open-menu')
+  menu.classList.toggle('move')
 }
+// Qunado der o Scroll o Menu Esconde.
+window.onscroll = () => {
+  navbar.classList.remove('open-menu')
+  menu.classList.remove('move')
+}
+
 
 // Swiper codes  - Reviews Slider autoplay
 
@@ -70,3 +80,15 @@ function sendmail(name, email, textarea) {
   })
 }
 validated()
+
+// Header Background Change on Scroll
+let header = document.querySelector("header")
+window.addEventListener("scroll", () => {
+  header.classList.toggle("header-active", window.scrollY > 0)
+})
+
+// Scroll Top 
+let scroolTop = document.querySelector(".scroll-top")
+window.addEventListener("scroll", () => {
+  scroolTop.classList.toggle("scroll-active", window.scrollY > 0)
+})

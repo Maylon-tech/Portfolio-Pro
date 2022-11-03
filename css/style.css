@@ -4,7 +4,7 @@
 @import 'portfolio.css';
 @import 'review.css';
 @import 'contact.css';
-
+@import 'responsive.css';
 
 body {
     color: var(--bg-color);
@@ -30,6 +30,12 @@ header {
     width: 100%;
     z-index: 100;
 }
+
+.header-active {
+    background: var(--box-color);
+    transition: .4s ease;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -189,4 +195,27 @@ header {
 .social .bx:hover {
     background: var(--main-color);
     transition: 0.3s all linear;
+}
+
+/* Scroll Top  */
+
+.scroll-top {
+    position: fixed;
+    bottom: -100%;
+    right: 1.5rem;
+}
+.scroll-top .bx {
+    padding: 9px;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.2rem;
+}
+.scroll-top .bx:hover {
+    background-color: var(--container-color);
+    transition: .4s ease;
+}
+.scroll-active {
+    bottom: 2rem;
+    transition: .4s ease;
 }
