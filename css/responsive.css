@@ -139,11 +139,15 @@
     }
 }
 
-@media (max-width:325px){
+@media (max-width: 425px){
     .navbar {
         width: 100%;
     }
     .portfolio-box {
         height: 190px;
+    }
+    .services-content {
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
     }
 }
