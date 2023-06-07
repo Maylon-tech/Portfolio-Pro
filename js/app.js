@@ -1,6 +1,20 @@
 const menu = document.querySelector(".menu-icon")
 const navbar = document.querySelector(".navbar")
 
+// // Fucntion Scrolling Effect
+
+// const profileImg = document.getElementById("profile-image")
+// console.log(profileImg)
+// const myObserver = new IntersectionObserver((entries) => {
+//   console.log(entries)
+// })
+
+// myObserver.observe(profileImg)
+
+// console.log(myObserver)
+
+
+
 
 menu.onclick = () => {
   navbar.classList.toggle('open-menu')
@@ -92,3 +106,5 @@ let scroolTop = document.querySelector(".scroll-top")
 window.addEventListener("scroll", () => {
   scroolTop.classList.toggle("scroll-active", window.scrollY > 0)
 })
+
+

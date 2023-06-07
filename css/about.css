@@ -75,17 +75,37 @@
     transition: .5s all cubic-bezier(0.075,0.82, 0.165, 1);
 }
 .services-box .bx {
-    font-size: 1.4rem;
-    color: var(--main-color);
+    font-size: 3rem;
     padding: 10px;
-    border-radius: 5rem;
-    border: 2px dashed var(--bg-color);
 }
+
+.services-box .bxl-html5 {
+    color: orange;
+}
+.services-box .bxl-css3 {
+    color: rgb(118, 118, 229);
+}
+.services-box .bxl-javascript {
+    color: yellow;
+}
+.services-box .bxl-typescript {
+    color: rgb(37, 98, 168);
+}
+.services-box .bxl-react {
+    color: rgb(16, 123, 159);
+}
+.services-box .bxl-nodejs {
+    color: green;
+}
+
+
+
+
 .services-box h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin: 0.5rem 0;
-    color: var(--main-color);
+    color: #eee;
 }
 .services-box p {
     font-size: 0.9rem;
