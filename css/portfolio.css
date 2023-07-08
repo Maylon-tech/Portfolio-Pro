@@ -34,16 +34,25 @@
     align-items: center;
     justify-content: center;
     background: hsl(234, 45%, 16%,0.7);
-    border: 2px solid orangered;
 }
 
+.portfolio-overlay .techs {
+    border: 2px solid orange;
+    margin-bottom: 1rem;
+    padding: .3rem;
+    text-align: center;
+}
+.portfolio-overlay .tech span {
+    font-size: .9rem;
+    color: #eee;
+}
 .portfolio-overlay .icons {
     display: flex;
     gap: 1rem;
 }
 
 .portfolio-overlay h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
