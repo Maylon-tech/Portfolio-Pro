@@ -97,8 +97,14 @@
 .services-box .bxl-nodejs {
     color: green;
 }
-
-
+.services-box .bxl-sass {
+    color: pink;
+}
+.services-box .mui {
+    width: 60px;
+    height: 60px;
+    color: green;
+}
 
 
 .services-box h2 {
